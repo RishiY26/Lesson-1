@@ -1,0 +1,38 @@
+body{
+    background-color:aquamarine;   
+    text-align: center;
+}
+/*Mobile  -> 576px
+Tablet  -> 768px
+Laptop  -> 992px
+Desktop -> 1200px */
+:root{
+    --mobile:red;
+    --tablet:yellow;
+    --laptop:green;
+    --desktop:blue;
+}
+#size{
+    display: grid;
+    height: 100vh; background-color: rgb(238, 192, 8);
+}
+@media screen and (min-width:576px){
+    #size{
+        background-color: var(--mobile);
+    }
+}
+@media screen and (min-width:768px){
+    #size{
+        background-color: var(--tablet);
+    }
+}
+@media screen and (min-width:992px){
+    #size{
+        background-color: var(--laptop);
+    }
+}
+@media screen and (min-width:1200px){
+    #size{
+        background-color: var(--desktop);
+    }
+}
